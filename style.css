@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Italics';
+  src: url('/fonts/ABCMarfa-SemiboldItalic-Trial.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('/fonts/ABCMarfa-Medium-Trial.otf') format('opentype');
+}
+
+:root {
+  /* font families */
+  --font-family-1: 'Medium', sans-serif;
+  --font-family-2: 'Italics', sans-serif;
+
+  /* primitives */
+  --color-blackdark:hsla(40, 30%, 4%, 1);
+  --color-brightwhite: #F7F6F7;
+  --color-motion: hsla(358, 79%, 70%, 1);
+  --color-ui: hsla(124, 38%, 44%, 1);
+  --color-info: hsla(208, 47%, 52%, 1);
+  --color-graphics: hsla(47, 90%, 56%, 1);
+
+  /* Tokenized colors */
+  --color-fg: var(--color-blackdark);
+  --color-bg: var(--color-brightwhite);
+}
+
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  /* border: 2px solid red; */
+  width: 65vw;
+  min-height: 50vh;
+  font-family: 'Medium', sans-serif;
+  letter-spacing: 3.75px;
+  line-height: 1.25;
+  margin: auto;
+}
+
+
+header{
+  position: relative;
+  padding-top: 30vh;
+  padding-bottom: 2.5vh;
+}
+
+.name{
+  font-size: 1.1em;
+  font-family: 'Italics', sans-serif;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  -webkit-text-stroke: .9px var(--color-fg);
+  text-stroke: .85px var(--color-fg);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+/* A TAGS */
+
+a {
+  text-decoration: none;
+  font-family: 'Medium', sans-serif;
+  font-size: .55em;
+}
+.menu .motion{
+  color: var(--color-motion);
+}
+.menu .ui{
+  color: var(--color-ui);
+}
+.menu .graphics{
+  color: var(--color-graphics);
+}
+.menu .info{
+  color: var(--color-info);
+}
+a:hover {
+  font-family: 'Italics', sans-serif;
+}
+.menu{
+  min-height: 6.5vh;
+  border-width: 1.5px 0;
+  border-style: solid;
+  border-color: var(--color-fg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* SMALL DESKTOP BREAKPOINT */
+
+@media (max-width: 750px) {
+  body{
+    line-height: 1.4;
+    width: 75vw;
+  }
+h1, span{
+  font-size: .75em;
+}
+.name{
+  -webkit-text-stroke: .75px var(--color-fg);
+  text-stroke: .75px var(--color-fg);
+  letter-spacing: 3px;
+}
+a{
+  font-size: .45em;
+  letter-spacing: 1.5px;
+}
+.menu{
+  min-height: 5vh;
+}
+}
+
+
+/* MOBILE BREKAPOINT */
+
+@media (min-width: 300px) and (max-width: 500px) {
+  body{
+   
+  }
+  header{
+    text-align: left;
+    padding-top: 15vh;
+    padding-bottom: 1.5vh;
+  }
+h1{
+  line-height: 1.25;
+  font-size: .65em;
+  letter-spacing: 2.5px;
+}
+.name{
+  display: inline-block;
+  font-size: 1.15em;
+  -webkit-text-stroke: .65px var(--color-fg);
+  text-stroke: .65px var(--color-fg);
+  letter-spacing: 2px;
+}
+a{
+  font-size: 1.25em;
+}
+.menu{
+  padding: 2vh 0;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 5vh;
+}
+}
+
+
+
+
