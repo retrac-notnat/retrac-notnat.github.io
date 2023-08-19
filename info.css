@@ -138,7 +138,7 @@ header {
   margin: 4.5% 0 0 4.5%;
   border-radius: 100%;
   border: 5px solid var(--color-graphics);
-  background-image: url("/video/Beach.gif");
+  background-image: url("video/Beach.gif");
   background-size: 110%;
   background-position-x: 15%;
 
