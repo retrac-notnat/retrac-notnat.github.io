@@ -93,7 +93,6 @@
     height: fit-content;
   }
 
-
   .panel {
     position: relative;
     min-width: 80%;
@@ -104,18 +103,10 @@
  
 div.frame {
   position: relative;
- /* width: 80%; */
- /* max-height: 100%; */
   padding-bottom: 56.25%;
   overflow: hidden;
   margin: auto;
-  /* border: 2px solid blue; */
 }
-
-
-    
-  
-  
   
   h2 {
     font-family: "Italics", sans-serif;
@@ -129,52 +120,9 @@ div.frame {
     margin-top: 2.25vh;
   
   }
-
-  
-  /* VIDEO CONTROLS */
-  
-  /* video::-webkit-media-controls-current-time-display,
-  video::-webkit-media-controls-time-remaining-display {
-    font-family: "italics" !important;
-    font-size: 0.85rem !important;
-    letter-spacing: 2.5px;
-  }
-  
-  video::-webkit-media-controls-play-button {
-    transform: scale(1.5) !important;
-  }
-  
-  video::-webkit-media-controls-panel {
-      background: linear-gradient(
-        to top,
-        var(--color-motionvideo),
-        transparent 20%
-      ) !important;
-    } */
-  
   
   /* SMALL DESKTOP BREAKPOINT */
-  
   @media (max-width: 1200px) {
-  
-    video::-webkit-media-controls-current-time-display,
-    video::-webkit-media-controls-time-remaining-display {
-      font-family: "italics" !important;
-      font-size: 0.8rem !important;
-      letter-spacing: 1.75px;
-    }
-    
-    video::-webkit-media-controls-play-button {
-      transform: scale(1.25) !important;
-    }
-    
-    video::-webkit-media-controls-panel {
-      background: linear-gradient(
-        to top,
-        var(--color-motionvideo),
-        transparent 25%
-      ) !important;
-    }
   
     header {
       font-size: 1rem;
@@ -198,52 +146,57 @@ div.frame {
   /* MOBILE BREKAPOINT */
   
   @media (min-width: 300px) and (max-width: 500px) {
-    video::-webkit-media-controls-current-time-display,
-    video::-webkit-media-controls-time-remaining-display {
-      font-family: "italics" !important;
-      font-size: 0.7rem !important;
-      letter-spacing: 1.4px;
-    }
-    
-    video::-webkit-media-controls-play-button {
-      transform: scale(1.05) !important;
-    }
-    
-    video::-webkit-media-controls-panel {
-      background: linear-gradient(
-        to top,
-        var(--color-motionvideo),
-        transparent 25%
-      ) !important;
-    }
   
     header {
       min-height: 7.5vh;
       font-size: .9rem;
       letter-spacing: 1.5px;
       padding: 0 3vw;
-      -webkit-text-stroke: 1px var(--color-motion);
-      text-stroke: 1px var(--color-motion);
+      -webkit-text-stroke: .35px var(--color-motion);
+      text-stroke: .35px var(--color-motion);
     }
   
     .return-icon {
       transform: scale(1);
     }
-    .scroll-container {
+   
+    div.scroll-container {
+      top: 12vh;
+      margin: auto;
+      position: relative;
+      display: flex;
       flex-direction: column;
-      gap: 4vh;
-      /* padding-top: 2vh; */
-      padding-bottom: 2vh;
-      margin-top: 11.5vh;
+      align-items: center;
+      max-width: 90vw;
+      height: fit-content;
     }
   
-    h2 {
-      /* top: 10vh; */
-      /* min-height: 1vh; */
-      font-family: 'Medium', sans-serif;
-      font-size: .9rem;
-      letter-spacing: 3px;
-      padding-bottom: 1vh;
+    .panel {
+      position: relative;
+      min-width: 100%;
+      max-height: 100%;
+       border: 1.5px solid var(--color-motion);
+       border-radius: 8px 8px 0 0;
     }
+   
+  div.frame {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin: auto;
   }
+    
+    h2 {
+      font-family: "Medium", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 4px;
+      text-align: center;
+      color: var(--color-motion);
+      border-bottom: 1.5px solid var(--color-motion);
+      padding-bottom: 1.25vh;
+      min-width: 100%;
+      min-height: 2.5vh;
+      margin-top: 1.25vh;
+    
+    }
   
