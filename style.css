@@ -138,7 +138,6 @@ h1{
   display: inline-block;
   font-size: 1.15em;
    -webkit-text-stroke: .35px var(--color-fg);
-  text-stroke: .35px var(--color-fg);
   letter-spacing: 2px;
 }
 a{
