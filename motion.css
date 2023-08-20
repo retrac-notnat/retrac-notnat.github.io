@@ -92,6 +92,7 @@
     max-width: 90vw;
     gap: 12vh;
     height: fit-content;
+    padding-bottom: 4.5vh;
   }
 
   .panel {
@@ -99,20 +100,21 @@
     min-width: 65%;
      border: 1.5px solid var(--color-motion);
      border-radius: 8px 8px 0 0;
+     height: object-fit;
   }
  
 div.frame {
   position: relative;
-  padding-bottom: 56.25%;
+  /* padding-bottom: 56.25%; */
   overflow: hidden;
   margin: auto;
  
 }
   
   h2 {
-    font-family: "Italics", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 4px;
+    font-family: "Medium", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
     text-align: center;
     color: var(--color-motion);
     border-bottom: 1.5px solid var(--color-motion);
@@ -170,16 +172,9 @@ div.frame {
     .panel {
       min-width: 100%;
     }
-   
-  /* div.frame {
-    position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    margin: auto;
-  } */
+
     
     h2 {
-      font-family: "Medium", sans-serif;
       font-size: .85rem;
       letter-spacing: 2.5px;
       text-align: center;
